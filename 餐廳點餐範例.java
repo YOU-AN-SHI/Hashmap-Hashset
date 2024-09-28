@@ -1,5 +1,3 @@
-package java期末報告;
-
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Hashtable;
@@ -8,16 +6,16 @@ import java.util.Scanner;
 public class 餐廳點餐範例 {
 	
 	static public void AddHashTable(Hashtable<String, Integer> EX1){
-        EX1.put("心痛的滋味",100);
-        EX1.put("鍋燒意麵", 80);
-        EX1.put("生命之水",200);
-        EX1.put("紅龜粿", 50);
+        EX1.put("A meal",100);
+        EX1.put("B meal", 80);
+        EX1.put("C meal",200);
+        EX1.put("D meal", 50);
     }
 	static public void AddHashMap(HashMap<String, Integer> order){
-        order.put("心痛的滋味",null);
-        order.put("鍋燒意麵",null);
-        order.put("生命之水",null);
-        order.put("紅龜粿", null);
+        order.put("A meal",null);
+        order.put("B meal",null);
+        order.put("C meal",null);
+        order.put("D meal", null);
     }
 	
 	public static void main(String[] args) {
@@ -32,10 +30,10 @@ public class 餐廳點餐範例 {
 		AddHashMap(order);
 		
 		HashSet<String> menu = new HashSet<String>();
-		menu.add("心痛的滋味 100元");
-		menu.add("鍋燒意麵 80元");
-		menu.add("生命之水 200元");
-		menu.add("紅龜粿 50元");
+		menu.add("A meal 100元");
+		menu.add("B meal 80元");
+		menu.add("C meal 200元");
+		menu.add("D meal 50元");
 		
 		System.out.println("歡迎來到 ㄤ菇桂專賣店");
 		System.out.println("菜單:" + menu);
